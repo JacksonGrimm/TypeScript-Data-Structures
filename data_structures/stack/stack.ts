@@ -1,8 +1,11 @@
+//Stack takes a LIFO (last in first out) order
+
 class Stack {
     private stack:any[] = []
     constructor(){
         this.stack = []
     }
+    //setter
     addToStack(value:any){
         this.stack.unshift(value)
     }
@@ -11,9 +14,11 @@ class Stack {
         this.removeFromStack()
         return value
     }
+    //setter
     removeFromStack(){
         this.stack.shift()
     }
+    //getter
     getStack(){
         return this.stack
     }
